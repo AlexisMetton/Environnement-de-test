@@ -43,7 +43,7 @@ const scrapLinkedin = async (deviceType, url) => {
 
         await new Promise((resolve) => setTimeout(resolve, 3000));
 
-        // verification url page
+        // check page
         const currentUrl = page.url();
         if (!currentUrl.includes("linkedin.com/search/results/content")) {
             throw new Error("Problem connecting to Linkedin !");
